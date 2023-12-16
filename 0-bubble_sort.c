@@ -10,11 +10,12 @@
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t i;
-	int tmp, swaps;
+	size_t i, swaps;
+	int tmp;
 
 	if (!array || size < 2)
 		return;
+
 	do {
 		swaps = 0;
 
