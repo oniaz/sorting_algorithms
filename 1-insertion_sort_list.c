@@ -41,11 +41,12 @@ void nodeSwap(listint_t **node1, listint_t **node2, listint_t **listHead)
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *n1 = *list, *n2, *n0;
+	listint_t *n1, *n2, *n0;
 
 	if (!list || !*list)
 		return;
 
+	n1 = *list;
 	while (n1 && n1->next)
 	{
 		n2 = n1->next;
