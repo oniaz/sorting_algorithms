@@ -28,7 +28,7 @@ void quick_sort(int *array, size_t size);
 
 /* utility functions */
 void nodeSwap(listint_t **node1, listint_t **node2, listint_t **listHead);
-void Lomuto(int *array, size_t size, int startIndex, int endIndex);
+void Lomuto(int *array, size_t size, ssize_t startIndex, ssize_t endIndex);
 
 /* printing fucntions */
 void print_list(const listint_t *list);

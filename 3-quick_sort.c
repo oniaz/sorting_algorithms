@@ -11,10 +11,10 @@
  *
  * Return: nothing.
  */
-void Lomuto(int *array, size_t size, int startIndex, int endIndex)
+void Lomuto(int *array, size_t size, ssize_t startIndex, ssize_t endIndex)
 {
-	int swapIndex = startIndex, pivot = endIndex, tmp;
-	size_t i;
+	int tmp;
+	ssize_t swapIndex = startIndex, pivot = endIndex, i;
 
 	if (startIndex == endIndex || startIndex > endIndex)
 		return;
